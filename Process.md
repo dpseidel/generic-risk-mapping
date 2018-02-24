@@ -1,4 +1,5 @@
 # Steps for analysis
+0. Trim environmental datasets.
 1. sampledata.R : 
     - randomly assign points in California
     - randomly assign positive cases
