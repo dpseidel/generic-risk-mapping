@@ -12,7 +12,9 @@ library(mapview)
 
 CA_bounds <- st_read("datafiles/CA_aea.shp") %>% st_geometry()
 
-# to make it a little more interesting/stratifief make a sampling zone
+set.seed(5678)
+
+# to make it a little more interesting/stratified make a sampling zone
 # and an infection zone
 #start with an arbitrary pt in NV, make a big buffer, clip by CA
 init_pt <- st_point(c(-116, 38.8)) %>% 
@@ -37,5 +39,11 @@ sample_points <- st_sample(sample_zone, rnorm(1,10000,1000)) %>%
 # make sure we have at least some positives
 sample_points %>% group_by(Status) %>% tally
 # perfect
+
+# make some covariates
+date_range <- seq(ymd('2000/01/01'), ymd('2005/12/31'), by="day")
+sample_points %>% mutate(sex = sample(c("M","F"), size=n(), replace = T),
+                         age = sample(c("Adult","Juv"), size=n(), replace = T),
+                         date = sample(date_range, n(), replace = T))  # TODO: sample in such a way that there is growth over time.  
 
 sample_points %>% write_sf("datafiles/points_aea.shp")

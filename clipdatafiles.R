@@ -59,5 +59,8 @@ DEM_CA_aea<- projectRaster(DEM_CA, crs = LC_proj)
 ## writeRaster
 writeRaster(DEM_CA_aea, "datafiles/ca_DEM_aea.tif") # still 48 MB but not as insane. 
 
+## Reduce Highways
+highways <- st_read("raw_datafiles/")
 
+## Reduc
 
