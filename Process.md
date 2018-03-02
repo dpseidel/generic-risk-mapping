@@ -18,6 +18,6 @@
     - Rare-events Logistic Regression, package `Zelig`
 5. rasters.R 
     - New raster preparation
-    - predict and plot risk Map!
+    - predict and plot risk map!
 
 
