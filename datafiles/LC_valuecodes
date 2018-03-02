@@ -1,0 +1,25 @@
+Pixel value NLCD 2001 land cover classes R G B 
+>11 Open water 72 109 162 
+>12 Perennial ice / snow 229 231 232 
+>21 Developed, open space 225 205 206 
+>22 Developed, low intensity 220 152 129 
+>23 Developed, medium intensity 241 0 0 
+>24 Developed. high intensity 171 0 0 
+>31 Barren land 179 175 164 
+>41 Deciduous forest 107 169 102 
+>42 Evergreen forest 29 101 51 
+>43 Mixed forest 189 204 147 
+>51 Dwarf scrub (Alaska only) 176 151 61 
+>52 Shrub / scrub 209 187 130 
+>71 Grassland / herbaceous 215 214 158 
+>72 Sedge / herbaceous (Alaska only) 209 209 130 
+>74 Moss (Alaska only) 130 186 158 
+>81 Pasture hay 221 216 62 
+>82 Cultivated crops 174 114 41 
+>90 Woody wetlands 167 196 216 
+>95 Emergent herbaceous wetlands 113 164 193 
+> 101, 102, 103 Non-U.S. land 240 235 211
+    Pixel value 101 represents land in Canada or the British Virgin Islands. 
+    Pixel value 102 represents land in Mexico or Russia. 
+    Pixel value 103 represents land in The Bahamas and Cuba in the southeastern part of the dataset. 
+>0 Ocean water 193 224 250

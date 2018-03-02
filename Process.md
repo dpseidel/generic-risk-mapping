@@ -1,16 +1,19 @@
 # Steps for analysis
-0. Trim environmental datasets.
+0. clipdatafiles.R
+    - Trim environmental datasets to CA
 1. sampledata.R : 
     - randomly assign points in California
     - randomly assign positive cases
     - created dataframe with sample number, lat, long, status, sex, age, date
-3. case_distmetrics.R : calculate distance measures. 
-    - mean distance from prior cases
-    - minimum distance to prior case
-4. Make buffers & pull data!
-    1. make buffers 1km2
-    2. percent coverage landcover
-    3. Ruggedness (sd of elevation). 
-5. Rare-events Logistic Regression
+2. case_distmetrics.R : calculate distance measures. 
+    - mean distance from positive cases
+    - distance to nearest positive case
+    - distance to CA border
+3. Make buffers & pull data!
+    - make buffers 5km2
+    - tabulate intersect landcover within buffer
+    - Ruggedness (sd of elevation within buffer) 
+    - highway density within buffer
+4. Rare-events Logistic Regression
 
 
