@@ -29,7 +29,7 @@ data %>% na.omit %$% cor(ruggedness, dst_border)
 data %>% na.omit %$% cor(ruggedness, time)
 
 
-model <- relogit(status ~  sex + age + time + ruggedness + dst_border,
+model <- relogit(status ~  sex + age + time + ruggedness + road_density,
                  data = data)
 
 ### standardize coefficients
@@ -43,5 +43,3 @@ Relogit.beta <- function(MOD){
 
 Relogit.beta(model)
 
-
-# TODO: build prpoer rasters for predict --> risk map. 

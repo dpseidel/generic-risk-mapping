@@ -9,11 +9,15 @@
     - mean distance from positive cases
     - distance to nearest positive case
     - distance to CA border
-3. Make buffers & pull data!
+3. buffermetrics.R: Make buffers & pull data!
     - make buffers 5km2
     - tabulate intersect landcover within buffer
     - Ruggedness (sd of elevation within buffer) 
     - highway density within buffer
-4. Rare-events Logistic Regression
+4. regression.R
+    - Rare-events Logistic Regression, package `Zelig`
+5. rasters.R 
+    - New raster preparation
+    - predict and plot risk Map!
 
 

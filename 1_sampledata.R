@@ -11,7 +11,7 @@ library(tidyverse)
 library(lubridate)
 library(mapview)
 
-CApoly<- st_read("datafiles/CA_aea.shp")
+CApoly <- st_read("datafiles/CA_aea.shp")
 
 set.seed(5678)
 
